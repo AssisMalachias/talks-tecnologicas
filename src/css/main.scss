@@ -1,0 +1,33 @@
+@use '_hero';
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body {
+    height:100%;
+}
+
+.container {
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+}
+
+@font-face {
+    font-family:OpenSans;
+    src:url("../../assets/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format('truetype');
+    font-weight:100 800;
+    font-style:normal;
+    
+}
+@mixin titulo($fontSize:20px){
+    font-family:OpenSans,sans-serif;
+    font-size:$fontSize;
+    line-height:1.4;
+    letter-spacing:0;
+}
+.titulo--big {
+    @include titulo(40px);
+    color:#fff;
+}
