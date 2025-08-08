@@ -1,0 +1,57 @@
+@use '_variable'as v;
+.event {
+    padding:80px 0 0;
+    background-image:linear-gradient(#0EFFFF,#065E45);
+     color:v.$corPrimeira;
+    .container {
+        display:flex;
+        justify-content: space-between;
+    }
+    &__imagen {
+        max-width:326px;
+        height:231px;
+        border-radius:12px;
+    }
+    &__details {
+        margin:10px 0px;
+        &__title {
+           margin-bottom:20px;
+           &--is--title {
+               margin-bottom:20px;
+           }
+        }
+        &__text {
+             margin-right:70px;
+             line-height:12px;
+        }
+    }
+    @media (max-width:640px){
+             background-image:linear-gradient(#065E45,#0EFFFF);
+            padding:20px;
+            .container {
+                display: block;
+            }
+            &__imagen {
+                width:100%;
+                border-radius:0;
+                position: relative;
+                left:0;
+                top:0;
+            }
+             &__details {
+                margin-right:0;
+                margin-bottom: 16px;
+
+                 &__title {
+                  margin-bottom:7px;
+                  text-align: center;
+                 }
+            }
+            &__text {
+                line-height:1px;
+                width:100%;
+                text-align:justify;
+                margin:0;
+            }
+    }
+}
