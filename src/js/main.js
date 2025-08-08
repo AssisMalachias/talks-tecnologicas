@@ -1,1 +1,1 @@
-console.log("Hello Word!");
+ AOS.init();

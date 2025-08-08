@@ -1,11 +1,29 @@
 @use '_variable'as v;
 .event {
-    padding:80px 0 0;
-    background-image:linear-gradient(#0EFFFF,#065E45);
+     padding:80px 0 0;
      color:v.$corPrimeira;
+     background-image:linear-gradient(v.$corblue1,v.$corblue2);
+
+     &--back-end {
+         background-image:linear-gradient(v.$corblue2,v.$corblue3);
+     }
+      &--au-xu {
+         background-image:linear-gradient(v.$corblue3,v.$corblue4);
+     }
+      &--estrucao {
+         background-image:linear-gradient(v.$corblue4,v.$corblue1);
+     }
+
+     &__details--left {
+        .container {
+            flex-direction: row-reverse;
+        }
+     }
+    
     .container {
         display:flex;
         justify-content: space-between;
+        gap:20px;
     }
     &__imagen {
         max-width:326px;
@@ -13,7 +31,6 @@
         border-radius:12px;
     }
     &__details {
-        margin:10px 0px;
         &__title {
            margin-bottom:20px;
            &--is--title {
@@ -26,7 +43,7 @@
         }
     }
     @media (max-width:640px){
-             background-image:linear-gradient(#065E45,#0EFFFF);
+             background-image:linear-gradient(v.$corblue2,v.$corblue1);
             padding:20px;
             .container {
                 display: block;
