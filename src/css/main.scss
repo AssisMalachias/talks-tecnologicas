@@ -1,8 +1,12 @@
 @use '_hero';
+@use 'components/information';
+@use 'components/button';
+@use '_variable'as v;
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+     list-style:none;
 }
 html,body {
     height:100%;
@@ -10,7 +14,7 @@ html,body {
 
 .container {
     width:100%;
-    max-width:760px;
+    max-width:960px;
     margin:0 auto;
 }
 
@@ -28,6 +32,33 @@ html,body {
     letter-spacing:0;
 }
 .titulo--big {
-    @include titulo(40px);
-    color:#fff;
+    @include titulo(37px);
+    color:v.$corPrimeira;
+}
+.titulo--media {
+    @include titulo(23px);
+}
+
+@font-face {
+    font-family:Roboto;
+    src:url("../../assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format('truetype');
+    font-weight:100 800;
+    font-style:normal; 
+}
+
+@mixin text($fontSize:21px){
+    font-family:Roboto,sans-serif;
+    font-size:$fontSize;
+    line-height:1.4;
+    letter-spacing:0;
+}
+.text--inf {
+     @include text(17px);
+}
+.text--big {
+    @include text(37px);
+    color:v.$corPrimeira;
+}
+.text--media {
+    @include text(27px);
 }
