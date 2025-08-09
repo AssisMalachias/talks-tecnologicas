@@ -1,8 +1,10 @@
 {
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
     "build": "^0.1.4",
     "npm": "^11.5.2",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "sharp": "^0.33.5"
   },
   "name": "project__noctua--codigo",
   "version": "1.0.0",
