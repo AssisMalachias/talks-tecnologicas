@@ -3,7 +3,7 @@
  // Data e hora do evento (Ano, Mês-1, Dia, Hora, Minuto, Segundo)
  //Atenção: no JavaScript, o mês é de 0 a 11 (janeiro = 0, dezembro = 11)
 
- const dataEvento = new Date("2025, 12, 12, 19:00:00").getTime();
+ const dataEvento = new Date("2025, 12, 12, 19:00:00").getTime(); // 12 /07 /1994
 
  function atualizarContagem(){
     const agora = new Date().getTime();
